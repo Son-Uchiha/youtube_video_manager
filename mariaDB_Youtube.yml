@@ -1,0 +1,10 @@
+services:
+  db-mariadb:
+    image: mariadb:lts
+    restart: always
+    environment:
+      - MARIADB_DATABASE=Youtube_Video_Manager
+      - MARIADB_ROOT_PASSWORD=123456
+    ports:
+      - "3307:3306"
+# docker compose -f mariaDB_Youtube.yml -p youtube_video_manager up -d
