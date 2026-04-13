@@ -105,8 +105,6 @@ export class VideoService {
         likes: +statistics.likeCount,
         comments: +statistics.commentCount,
       };
-
-      //   return items;
     } catch {
       throw new NotFoundException('Video not found on YouTube');
     }
